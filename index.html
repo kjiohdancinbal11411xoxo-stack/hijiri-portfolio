@@ -169,6 +169,10 @@
 
   btn.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
+
+    // ハンバーガーも×に変形
+    btn.classList.toggle("is-open");
+
     btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     btn.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
   });
@@ -177,10 +181,13 @@
   nav.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       nav.classList.remove("is-open");
+      btn.classList.remove("is-open"); // ← ×を元に戻す
+
       btn.setAttribute("aria-expanded", "false");
       btn.setAttribute("aria-label", "メニューを開く");
     });
   });
 </script>
+
 </body>
 </html>

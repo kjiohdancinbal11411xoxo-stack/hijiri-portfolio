@@ -593,6 +593,7 @@ html, body {
     height:2px;
     background:#4A4A4A;
     border-radius:2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   /* ナビは閉じる（初期:display: 画面外に隠す;） */

@@ -566,6 +566,12 @@ html, body {
    Responsive (SP)
 ====================== */
 @media (max-width: 768px){
+
+  .section,.contact-btn-wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   /* ハンバーガー表示 */
   .hamburger{
     display:inline-flex;

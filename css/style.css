@@ -596,6 +596,17 @@ html, body {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
+  .hamburger.is-open .hamburger__line:nth-of-type(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.is-open .hamburger__line:nth-of-type(2) {
+   opacity: 0;
+  }
+  .hamburger.is-open .hamburger__line:nth-of-type(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+
   /* ナビは閉じる（初期:display: 画面外に隠す;） */
   .header__nav{
     display:block;

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+　<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+　<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <img src="images/logo.png" alt="HIJIRI_logo">
+      </div>
+
+      <!-- ハンバーガーメニューボタン（SPで表示） -->
+    <button class="hamburger" id="hamburger"
+    aria-controls="globalNav" aria-expanded="false" aria-label="メニューを開く">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+  </button>
+  
+      <!-- ナビ -->
+    <nav class="header__nav" id="globalNav">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="works.html">works</a></li>
+        <li><a href="index.html#contact">contact</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  
+<main>
+  <section class="fv">
+    
+    <div class="fv__inner">
+      <div class="fv__image left">
+        <img src="images/firstview_watashi.png" alt="私の画像">
+      </div>
+
+      <h1 class="visually-hidden">HIJIRI’S PORTFOLIO</h1>
+
+    <div class="fv__inner">
+      <img src="images/サイトロゴ_firstview.png" alt="HIJIRI’S PORTFOLIO" class="fv__logo">
+    </div>
+
+      <div class="fv__image right">
+        <img src="images/firstview_utamaru.png" alt="犬の画像">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h1 class="section-title">about <span>-わたしについて-</span></h1>
+  
+    <div class="about__content">
+      <div class="about__image">
+        <img src="images/自己紹介イラスト.PNG" alt="自己紹介イラスト">
+      </div>
+  
+      <div class="about__text">
+        <h2>OGAWA HIJIRI</h2>
+        <p>
+          元公務員として管理栄養士の経験を積む中で、自分らしい働き方を見つめ直し、Webデザインの学習を始めました。<br>
+          制作することが好きで、これまでの経験を活かしながら、相手に寄り添い、伝えたい情報がきちんと届くデザインを大切にしています。
+        </p>
+      </div>
+    </div>
+  
+    <div class="viewmore_btn">
+      <a href="about.html" class="btn-view">View more</a>
+    </div>
+  </section>
+  
+  <section class="works" id="works">
+    <h2 class="section-title">works <span>-作ったもの-</span></h2>
+  
+    <div class="works__list">
+      <article class="works__item">
+        <a href="works.html" class="works__link">
+          <img src="images/制作実績1.png" alt="ニュースページバナー">
+          <span class="works__type">バナー</span>
+        </a>
+        <p class="works__text">
+          社内ニュースページ用バナーのデザイン制作を担当しました。
+        </p>
+      </article>
+    
+      <article class="works__item">
+        <a href="works.html" class="works__link">
+          <img src="images/制作実績2.jpg" alt="夏コスメセールバナー">
+          <span class="works__type">バナー</span>
+        </a>
+        <p class="works__text">
+          架空ECサイト「BEAUTY HOLIC」の夏コスメセール広告バナーです。
+        </p>
+      </article>
+    
+      <article class="works__item">
+        <a href="works.html" class="works__link">
+          <img src="images/制作実績3.jpg" alt="ポートフォリオサイト">
+          <span class="works__type">Webサイト</span>
+        </a>
+        <p class="works__text">
+          自身の経歴や制作物をまとめたポートフォリオサイトです。
+        </p>
+      </article>
+    </div>
+    
+    <div class="viewmore_btn">
+      <a href="works.html" class="btn-view">View more</a>
+    </div>
+  </section>
+  
+  <div class="illustration">
+    <img src="images/portfolio_装飾.png" alt="サイト装飾用イラスト">
+  </div>
+  
+  <section id="contact" class="contact">
+    <h2 class="section-title">contact -お問い合わせ-</h2>
+  
+    <form class="contact-form" action="#" method="post">
+      <p class="form-note">
+        ※このフォームからメッセージを送信することはできません。
+      </p>
+  
+      <div class="form-group">
+        <label for="name">氏名</label>
+        <input type="text" id="name" name="name" placeholder="例：山田 太郎">
+      </div>
+  
+      <div class="form-group">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="例：sample@example.com">
+      </div>
+  
+      <div class="form-group">
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください"></textarea>
+      </div>
+  
+      <div class="contact-submit">
+        <button type="submit" class="btn-contact">Send</button>
+      </div>
+    </form>
+  </section>  
+  
+
+</main>
+<footer class="footer">
+  <small class="footer__copyright">
+    © 2025 OGAWA HIJIRI
+  </small>
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+  const btn = document.getElementById("hamburger");
+  const nav = document.getElementById("globalNav");
+
+  btn.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    btn.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+  });
+
+  // メニュー内リンクを押したら閉じる
+  nav.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-label", "メニューを開く");
+    });
+  });
+</script>
+</body>
+</html>

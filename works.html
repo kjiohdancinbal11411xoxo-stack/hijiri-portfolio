@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+　<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+　<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <img src="images/logo.png" alt="HIJIRI_logo">
+          </div>
+    
+          <!-- ハンバーガーメニューボタン（SPで表示） -->
+        <button class="hamburger" id="hamburger"
+        aria-controls="globalNav" aria-expanded="false" aria-label="メニューを開く">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      　</button>
+      
+          <!-- ナビ -->
+        <nav class="header__nav" id="globalNav">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="works.html" class="active">works</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+          </ul>
+        </nav>
+        </div>
+      </header>
+  
+<main>
+  <section class="fv">
+    
+    <div class="fv__inner">
+      <div class="fv__image left">
+        <img src="images/firstview_watashi.png" alt="私の画像">
+      </div>
+
+      <h1 class="visually-hidden">HIJIRI’S PORTFOLIO</h1>
+
+    <div class="fv__inner">
+      <img src="images/サイトロゴ_firstview.png" alt="HIJIRI’S PORTFOLIO" class="fv__logo">
+    </div>
+
+      <div class="fv__image right">
+        <img src="images/firstview_utamaru.png" alt="犬の画像">
+      </div>
+    </div>
+  </section>
+
+  <section class="section works-page">
+    <h1 class="section-title">works <span>-作ったもの-</span></h1>
+  
+    <div class="works-page__list">
+  
+      <!-- 作品① -->
+      <article class="works-page__item">
+        <div class="works-page__image-link">
+          <img src="images/制作実績1.png" alt="ニュースページバナー">
+        </div>
+  
+        <div class="works-page__content">
+          <p class="works-page__type">バナー</p>
+          <p class="works-page__text">
+            HR COMPANY株式会社のニュースページに掲載するバナー制作を担当しました。「メンバーズボイス」として、現役メンバーの声を紹介するニュース企画の第1弾に使用されたバナーで、社風や現役メンバーの雰囲気がしっかり伝わるデザインを意識しています。
+          </p>
+  
+          <!-- 開閉ボタン -->
+          <button class="works-toggle" type="button" aria-expanded="false">
+            <span class="works-toggle__text">詳細を見る</span>
+            <span class="works-toggle__icon">＋</span>
+          </button>
+          
+          <!-- 開閉される詳細（最初は非表示） -->
+          <div class="works-detail" aria-hidden="true">
+            <dl class="works-detail__dl">
+              <div class="works-detail__row">
+                <dt>目的</dt>
+                <dd>会社の雰囲気が伝わり、「こんな会社だと思える」印象づけにつなげる。</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>ターゲット</dt>
+                <dd>お取引先企業様／求職者（転職検討者）／社員とその家族</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>ポイント</dt>
+                <dd>社員や現役メンバーの雰囲気が伝わるよう、親しみと信頼感のバランスを意識。</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>使用ツール</dt>
+                <dd>Illustrator</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>URL</dt>
+                <dd><a href="https://hrcompany.co.jp/news/%e3%83%8b%e3%83%a5%e3%83%bc%e3%82%b9%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%8c%e5%a7%8b%e3%81%be%e3%82%8a%e3%81%be%e3%81%99%e7%8f%be%e5%bd%b9%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%8b%e3%82%89%e3%81%ae/">
+                    HR COMPANY株式会社のニュースページ</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </article>
+  
+      <!-- 作品② -->
+      <article class="works-page__item">
+        <div class="works-page__image-link">
+          <img src="images/制作実績2.jpg" alt="夏コスメセールバナー">
+        </div>
+  
+        <div class="works-page__content">
+          <p class="works-page__type">バナー</p>
+          <p class="works-page__text">
+            研修の制作課題として、架空のECサイト「BEAUTY HOLIC」の夏コスメセールを想定した広告バナーを制作しました。季節感やセールの訴求力を意識し、視認性と配色バランスに配慮したデザインを心がけています。
+          </p>
+  
+          <button class="works-toggle" type="button" aria-expanded="false">
+            <span class="works-toggle__text">詳細を見る</span>
+            <span class="works-toggle__icon">＋</span>
+          </button>          
+  
+          <div class="works-detail" aria-hidden="true">
+            <dl class="works-detail__dl">
+              <div class="works-detail__row">
+                <dt>目的</dt>
+                <dd>セール情報を目立たせ、ECサイトへの誘導と購買意欲を高める。</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>ターゲット</dt>
+                <dd>夏コスメに関心のある20〜30代の女性</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>ポイント</dt>
+                <dd>季節感（爽やかさと夏の海のキラキラしたイメージ）及びセール訴求（数字の見やすさ）の両立を意識。</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>使用ツール</dt>
+                <dd>Illustrator / Photoshop</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </article>
+  
+      <!-- 作品③ -->
+      <article class="works-page__item">
+        <div class="works-page__image-link">
+          <img src="images/制作実績3.jpg" alt="ポートフォリオサイト">
+        </div>
+  
+        <div class="works-page__content">
+          <p class="works-page__type">Webサイト</p>
+          <p class="works-page__text">
+            研修課題として、自身の経歴やスキル、制作物をまとめたポートフォリオサイトを制作しました。サイト全体の構成設計からデザイン、情報整理までを行い、自分自身の考え方や制作への向き合い方が伝わることを意識して制作しています。
+          </p>
+  
+          <button class="works-toggle" type="button" aria-expanded="false">
+            <span class="works-toggle__text">詳細を見る</span>
+            <span class="works-toggle__icon">＋</span>
+          </button>          
+  
+          <div class="works-detail" aria-hidden="true">
+            <dl class="works-detail__dl">
+              <div class="works-detail__row">
+                <dt>目的</dt>
+                <dd>学習成果をまとめ、制作プロセスや考え方も含めて伝える。</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>ターゲット</dt>
+                <dd>採用担当（制作会社・広報など）</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>ポイント</dt>
+                <dd>デザイン性と人柄が伝わること、情報の見やすさを両立。</dd>
+              </div>
+              <div class="works-detail__row">
+                <dt>使用ツール</dt>
+                <dd>VScode / Figma / Illustrator / Photoshop</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </article>
+  
+    </div>
+  </section>  
+  
+
+  <div class="illustration">
+    <img src="images/portfolio_装飾.png" alt="サイト装飾用イラスト">
+  </div>
+
+  <div class="contact-btn-wrapper">
+    <a href="index.html#contact" class="btn-contact">
+      お問い合わせはこちらから
+    </a>
+  </div>
+
+</main>
+<footer class="footer">
+  <small class="footer__copyright">
+    © 2025 OGAWA HIJIRI
+  </small>
+</footer>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+    const btn = document.getElementById("hamburger");
+    const nav = document.getElementById("globalNav");
+  
+    btn.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      btn.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+    });
+  
+    // メニュー内リンクを押したら閉じる
+    nav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-label", "メニューを開く");
+      });
+    });
+  </script>
+
+<script>
+    $(function () {
+  
+      $('.works-toggle').on('click', function () {
+        const $btn = $(this);
+        const $detail = $btn.next('.works-detail');
+        const $text = $btn.find('.works-toggle__text');
+        const $icon = $btn.find('.works-toggle__icon');
+  
+        $detail.slideToggle(300);
+  
+        const isOpen = $btn.attr('aria-expanded') === 'true';
+        $btn.attr('aria-expanded', !isOpen);
+        $detail.attr('aria-hidden', isOpen);
+  
+        // テキストとアイコン切り替え
+        $text.text(isOpen ? '詳細を見る' : '閉じる');
+        $icon.text(isOpen ? '＋' : '−');
+      });
+  
+    });
+  </script>  
+  
+</body>
+</html>

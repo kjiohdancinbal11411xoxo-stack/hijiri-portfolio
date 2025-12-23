@@ -589,6 +589,8 @@ html, body {
   }
 
   .hamburger__line{
+    display: block;
+    transform-origin: center;
     width:28px;
     height:2px;
     background:#4A4A4A;
@@ -636,7 +638,9 @@ html, body {
   .header__nav ul{
     display:flex;
     flex-direction:column;
+    flex-wrap: wrap;
     gap: 8px;
+    justify-content: center;
   }
 
   .header__nav a{
@@ -645,19 +649,6 @@ html, body {
     border-radius: 12px;
     text-decoration:none;
     color:#4A4A4A;
-  }
-
-  /* 開いた時 */
-  .header__nav.is-open{
-    display:block;
-  }
-
-
-
-  .header__nav ul {
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
   }
 
 

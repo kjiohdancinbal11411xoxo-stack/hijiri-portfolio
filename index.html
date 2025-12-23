@@ -169,8 +169,7 @@
 
   btn.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
-
-    // ★ ここが重要：ボタンにも付ける
+    
     btn.classList.toggle("is-open");
 
     btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
@@ -181,7 +180,7 @@
   nav.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       nav.classList.remove("is-open");
-      btn.classList.remove("is-open"); // ← 戻す
+      btn.classList.remove("is-open");
 
       btn.setAttribute("aria-expanded", "false");
       btn.setAttribute("aria-label", "メニューを開く");

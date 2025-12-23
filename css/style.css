@@ -585,6 +585,7 @@ html, body {
     border:none;
     padding:10px;
     cursor:pointer;
+    z-index: 1100;
   }
 
   .hamburger__line{
@@ -594,19 +595,30 @@ html, body {
     border-radius:2px;
   }
 
-  /* ナビは閉じる（初期） */
+  /* ナビは閉じる（初期:display: 画面外に隠す;） */
   .header__nav{
-    display:none;
-    position:absolute;
-    top: 64px;
-    right: 20px;
+    display:block;
+    position: fixed;
+    top: 0;
+    right: 0;
     width: min(280px, calc(100vw - 40px));
     background: #F4A6A1;
     border: 1.5px solid #4A4A4A;
     border-radius: 16px;
     box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-    padding: 12px;
+    padding: 80px 16px 16px;
     z-index: 1000;
+
+    /* スライド用 */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* 開いた状態 */
+  .header__nav.is-open{
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .header__nav ul{

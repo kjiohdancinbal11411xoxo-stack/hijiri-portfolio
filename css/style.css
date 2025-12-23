@@ -22,29 +22,24 @@ html, body {
     background-color: #FFF7E8;
   }
   
-  body {
-    font-size: 16px;
-    line-height: 1.8;
-  }
-  
   h1 {
     font-size: 36px;
-    line-height: 54px;
+    line-height: 72px;
   }
   
   h2 {
     font-size: 26px;
-    line-height: 39px;
+    line-height: 52px;
   }
   
   h3 {
     font-size: 22px;
-    line-height: 33px;
+    line-height: 44px;
   }
   
   p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 32px;
   }
   
 
@@ -215,7 +210,6 @@ html, body {
 .about__text {
   font-size: 22px;
   max-width: 480px;
-  line-height: 1.8;
 }
 
   /* viewmoreボタン見た目 */
@@ -292,8 +286,6 @@ html, body {
 
 .works__text {
   margin-top: 8px;
-  line-height: 1.7;
-  font-size: 14px;
 }
 
 .works__list {
@@ -390,7 +382,6 @@ html, body {
 }
 
 .skill__text p {
-  line-height: 1.8;
   margin-bottom: 16px;
 }
 
@@ -422,7 +413,6 @@ html, body {
 }
 
 .strengths__text p {
-  line-height: 1.8;
   margin-bottom: 16px;
 }
 

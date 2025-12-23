@@ -74,7 +74,7 @@ html, body {
 }
 
 .header__logo {
-  margin-left: -70px;
+  margin-left: 0px;
 }
 
 .header__logo img {

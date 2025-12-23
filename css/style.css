@@ -251,7 +251,7 @@ html, body {
   }
 
 .btn-view:hover {
-  background-color: #F4A6A1; /* サーモンピンク */
+  background-color: #F4A6A1;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   transform: translateY(-2px);
 }
@@ -287,7 +287,7 @@ html, body {
 }
 
 .works__link:hover .works__type {
-  background-color: #F4A6A1; /* hoverアクセント */
+  background-color: #F4A6A1;
 }
 
 .works__text {
@@ -598,7 +598,7 @@ html, body {
   .header__nav{
     display:none;
     position:absolute;
-    top: 64px;          /* ヘッダー高さに合わせて調整 */
+    top: 64px;
     right: 20px;
     width: min(280px, calc(100vw - 40px));
     background: #F4A6A1;
@@ -645,7 +645,7 @@ html, body {
   }
 
   .about__image img {
-    width: 70%;   /* 画像を大きめに */
+    width: 70%;
     max-width: 300px;
     margin: 0 auto;
   }
@@ -745,7 +745,7 @@ html, body {
   /* 開いた詳細：はみ出し防止 */
   .works-detail {
     width: 100%;
-    overflow-wrap: anywhere; /* 長いURL等の折り返し対策 */
+    overflow-wrap: anywhere;
   }
 
   .works-detail__row {

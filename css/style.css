@@ -120,7 +120,7 @@ html, body {
 ====================== */
   .fv {
     height: 500px;
-    background-image: url("../images/firstview_image.JPG");
+    background-image: url("../images/firstview_image.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

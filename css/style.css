@@ -135,13 +135,19 @@ html, body {
   }
   
   .fv__title {
-    font-size: 36px;
-  }
-
-  .fv__logo {
-    width: 900px;
-    max-width: 80%;
-    height: auto;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 700;
+    color: #FFF7E8;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0 24px;
+    white-space: nowrap;
+    text-shadow:
+    -2px -2px 0 #4A4A4A,
+     2px -2px 0 #4A4A4A,
+    -2px  2px 0 #4A4A4A,
+     2px  2px 0 #4A4A4A;
   }  
   
   .fv__image {

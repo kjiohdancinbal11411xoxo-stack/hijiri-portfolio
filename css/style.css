@@ -344,6 +344,10 @@ html, body {
 /* ======================
    HOME：contactお問い合わせフォーム
 ====================== */
+.contact {
+  padding-bottom: 120px; /* フッターと被らないための余白 */
+}
+
 .contact-form {
   max-width: 600px;
   margin: 0 auto;

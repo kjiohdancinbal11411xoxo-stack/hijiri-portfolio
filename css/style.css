@@ -306,15 +306,22 @@ html, body {
    中間に挟むイラスト
 ====================== */
 .illustration {
-  text-align: center;
-  margin: 80px 0 40px;
+  position: relative;
+  width: 100%;
+  height: 200px; /* 表示したい高さを確保 */
+  margin: 80px 0; /* 前後の余白はここで管理 */
 }
 
-.illustration img {
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
+.illustration::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/portfolio_decoration.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
+
 
 /* ======================
    HOME：contactお問い合わせフォーム

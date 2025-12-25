@@ -127,16 +127,34 @@ html, body {
     background-image: url("../images/fv_image.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
+  }
+
+  .fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 247, 232, 0.28) 0%,
+      rgba(255, 247, 232, 0.18) 35%,
+      rgba(255, 247, 232, 0.0) 70%
+    );
+    pointer-events: none;
   }
   
   .fv__inner {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    text-align: center;
-  }
+  
+    display: flex;
+    align-items: center;        /* 縦位置を揃える */
+    justify-content: center;    /* 全体を中央に */
+    gap: 24px;
+    height: 100%;               /* fvの高さに合わせる */
+    padding: 0 16px;
+  }  
   
   .fv__title {
     font-family: "Zen Maru Gothic", sans-serif;

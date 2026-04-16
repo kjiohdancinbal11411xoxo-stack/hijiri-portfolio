@@ -246,6 +246,31 @@ html, body {
   }
 }
 
+.fv__image img {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ふわふわ上下 */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fv__image.left img {
+  animation-delay: 0.2s;
+}
+
+.fv__image.right img {
+  animation-delay: 0.6s;
+}
+
 /* ======================
    HOME：aboutセクション
 ====================== */
@@ -643,6 +668,20 @@ html, body {
   text-align: center;
 }
 
+/* ===== ページふわっと表示（縮小→表示） ===== */
+
+body {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  animation: pageFadeZoom 0.8s ease forwards;
+}
+
+@keyframes pageFadeZoom {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 /* ======================
    Responsive (SP)

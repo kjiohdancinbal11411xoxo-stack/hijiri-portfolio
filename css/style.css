@@ -901,4 +901,33 @@ body {
     margin-left: 0;
     line-height: 1.8;
   }
+
+  .fv {
+    height: 400px; /* 少し高さ確保 */
+  }
+
+  .fv__title {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 16px;
+    white-space: normal;
+  }
+
+  .fv__image img {
+    width: 110px;
+    height: 110px;
+  }
+
+  /* 左 */
+  .fv__image.left {
+    left: 10px;
+    top: 20%;
+  }
+
+  /* 右 */
+  .fv__image.right {
+    right: 10px;
+    top: 60%;
+  }
+
 }

@@ -204,14 +204,14 @@ html, body {
 .fv__image.left {
   transform: translateX(-80px);
   animation: slideInLeft 0.8s ease-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.8s;
 }
 
 /* 右（犬） */
 .fv__image.right {
   transform: translateX(80px);
   animation: slideInRight 0.8s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1.0s;
 }
 
 /* 左から */

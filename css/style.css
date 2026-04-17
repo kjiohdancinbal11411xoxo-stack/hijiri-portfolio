@@ -180,12 +180,12 @@ html, body {
 
   .fv__image.left {
     left: 10px;
-    top: 130px; /* 数字小さくすると上に行く */
+    top: 30px; /* 数字小さくすると上に行く */
   }
   
   .fv__image.right {
     right: 50px;
-    top: 400px; /* 数字大きくすると下に行く */
+    top: 350px; /* 数字大きくすると下に行く */
   }
   
   .fv__image img {
